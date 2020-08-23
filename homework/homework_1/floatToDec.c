@@ -7,12 +7,12 @@ int main (int argc, char *argv[]) {
 
     // number of arguments is incorrect
     if (argc != 2) {
-      printf("incorrect number of arguments");
+      printf("\nError: incorrect number of arguments\n\n");
       exit(1);
     }
     float input = atof(argv[1]);
     if (input == 0 && (argv[1])[0] != '0') {
-        printf("given input is not a float");
+        printf("\nError: given input is not a float\n\n");
         exit(1);
     }
     printf("Input given: %s\n", argv[1]);
